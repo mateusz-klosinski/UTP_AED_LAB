@@ -1,8 +1,10 @@
 import pandas as pd
+import numpy as np
 
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 from matplotlib import pyplot as plt
+from sklearn.cluster import DBSCAN
 
 # Colors and markers
 colors = ['orange', 'brown', 'red', 'green', 'blue', 'black', 'magenta', 'yellow', 'gray', 'crimson']
@@ -40,5 +42,14 @@ for index in range(n_clusters):
 
 # Draw center points and show legend
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], color='purple', marker='X', label="Centroidy")
+plt.title('KMeans - wykres z podziałem na klastry: %d' % n_clusters)
 plt.legend()
+plt.show()
+
+
+# DBSCAN - Create matrix from columns with analyzed data and use DBSCAN
+matrix = np.column_stack((transactions["W0"], transactions["Normalized 0"]))
+model = DBSCAN(eps=0.25, min_samples=400).fit(matrix)
+plt.scatter(matrix[:,0], matrix[:,1], c=model.labels_)
+plt.title('DBSCAN - wykres z podziałem na klastry: %d' % n_clusters)
 plt.show()
