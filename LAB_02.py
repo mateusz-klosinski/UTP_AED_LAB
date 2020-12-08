@@ -1,10 +1,14 @@
 import pandas as pd
 import numpy as np
+import scipy.cluster.hierarchy as shc
 
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 from matplotlib import pyplot as plt
 from sklearn.cluster import DBSCAN
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import normalize
+
 
 # Colors and markers
 colors = ['orange', 'brown', 'red', 'green', 'blue', 'black', 'magenta', 'yellow', 'gray', 'crimson']
@@ -53,6 +57,19 @@ def show_dbscan_chart():
     plt.show()
 
 
+def agglomerative_clustering(transactions):
+    transactions = transactions.drop('Product_Code', axis=1)
+    X_normalized = normalize(transactions)
+    X_normalized = pd.DataFrame(X_normalized)
+    pca = PCA(n_components=2)
+    X_principal = pca.fit_transform(X_normalized)
+    X_principal = pd.DataFrame(X_principal)
+    plt.figure(figsize=(8, 8))
+    plt.title('Dendogram - wykres')
+    shc.dendrogram((shc.linkage(X_principal, method='ward')))
+    plt.show()
+
+
 def scale_week_column():
     # Scale values to 0-1
     scaler = MinMaxScaler()
@@ -74,5 +91,8 @@ show_kmeans_chart('random', "KMeans")
 # KMeans++ algorithm
 show_kmeans_chart('k-means++', "KMeans++")
 
-# DBScan algorithm
+# DBScan
 show_dbscan_chart()
+
+# Agglomerative Clustering
+agglomerative_clustering(transactions)
