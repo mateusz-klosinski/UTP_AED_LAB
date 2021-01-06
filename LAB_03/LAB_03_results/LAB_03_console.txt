@@ -1,0 +1,213 @@
+*** svm ***
+Accuracy score: 0.9367488931056294
+Recall score (micro): 0.9367488931056294
+Recall score (macro): 0.8315992379116254
+F1 score (micro): 0.9367488931056295
+F1 score (macro): 0.8424773341480315
+AUC score (micro): 0.9654993962394341
+AUC score (macro): 0.9127519884019203
+
+*** knn ***
+Accuracy score: 0.8848829854522454
+Recall score (micro): 0.8848829854522454
+Recall score (macro): 0.8103677778546495
+F1 score (micro): 0.8848829854522454
+F1 score (macro): 0.8135337752124174
+AUC score (micro): 0.9372089011557702
+AUC score (macro): 0.8995627260424816
+
+*** dt ***
+Accuracy score: 0.8083491461100569
+Recall score (micro): 0.8083491461100569
+Recall score (macro): 0.7108069670306832
+F1 score (micro): 0.8083491461100569
+F1 score (macro): 0.7182105223969765
+AUC score (micro): 0.8954631706054856
+AUC score (macro): 0.8460961499796958
+
+*** rf ***
+Accuracy score: 0.9104996837444655
+Recall score (micro): 0.9104996837444655
+Recall score (macro): 0.8133260347295933
+F1 score (micro): 0.9104996837444655
+F1 score (macro): 0.8165723506413781
+AUC score (micro): 0.9511816456787995
+AUC score (macro): 0.9023434955787816
+
+*** svm ***
+Cross validation score: [0.91184041 0.88674389 0.91886671 0.93432067 0.94333548]
+Average: 0.9190214315133826
+Standard deviation: 0.019589132226909587
+
+*** knn ***
+Cross validation score: [0.87902188 0.87065637 0.87701223 0.89954926 0.90019317]
+Average: 0.8852865836124046
+Standard deviation: 0.012226077745628334
+
+*** dt ***
+Cross validation score: [0.80501931 0.84362934 0.81004507 0.84481648 0.87379266]
+Average: 0.835460573258384
+Standard deviation: 0.02528331116354772
+
+*** rf ***
+Cross validation score: [0.90733591 0.88030888 0.90405666 0.90663232 0.94269156]
+Average: 0.908205068282338
+Standard deviation: 0.019939678818719865
+
+The best algorithms: 
+   maximum average: svm
+   minimum standard deviation: knn
+
+Accuracy scores:
+C: 1000, kernel: poly, degree: 1, gamma: scale, score: 0.9512966476913346
+C: 1000, kernel: poly, degree: 1, gamma: auto, score: 0.9509803921568627
+C: 1000, kernel: poly, degree: 2, gamma: scale, score: 0.9576217583807717
+C: 1000, kernel: poly, degree: 2, gamma: auto, score: 0.9582542694497154
+C: 1000, kernel: poly, degree: 3, gamma: scale, score: 0.956989247311828
+C: 1000, kernel: poly, degree: 3, gamma: auto, score: 0.9573055028462998
+C: 1000, kernel: poly, degree: 4, gamma: scale, score: 0.9554079696394687
+C: 1000, kernel: poly, degree: 4, gamma: auto, score: 0.9563567362428842
+C: 1000, kernel: poly, degree: 5, gamma: scale, score: 0.9519291587602783
+C: 1000, kernel: poly, degree: 5, gamma: auto, score: 0.9554079696394687
+C: 1000, kernel: rbf, degree: 1, gamma: scale, score: 0.9538266919671095
+C: 1000, kernel: rbf, degree: 1, gamma: auto, score: 0.9550917141049968
+C: 1000, kernel: rbf, degree: 2, gamma: scale, score: 0.9538266919671095
+C: 1000, kernel: rbf, degree: 2, gamma: auto, score: 0.9550917141049968
+C: 1000, kernel: rbf, degree: 3, gamma: scale, score: 0.9538266919671095
+C: 1000, kernel: rbf, degree: 3, gamma: auto, score: 0.9550917141049968
+C: 1000, kernel: rbf, degree: 4, gamma: scale, score: 0.9538266919671095
+C: 1000, kernel: rbf, degree: 4, gamma: auto, score: 0.9550917141049968
+C: 1000, kernel: rbf, degree: 5, gamma: scale, score: 0.9538266919671095
+C: 1000, kernel: rbf, degree: 5, gamma: auto, score: 0.9550917141049968
+C: 1000, kernel: sigmoid, degree: 1, gamma: scale, score: 0.7871600253004427
+C: 1000, kernel: sigmoid, degree: 1, gamma: auto, score: 0.9452877925363694
+C: 1000, kernel: sigmoid, degree: 2, gamma: scale, score: 0.7871600253004427
+C: 1000, kernel: sigmoid, degree: 2, gamma: auto, score: 0.9452877925363694
+C: 1000, kernel: sigmoid, degree: 3, gamma: scale, score: 0.7871600253004427
+C: 1000, kernel: sigmoid, degree: 3, gamma: auto, score: 0.9452877925363694
+C: 1000, kernel: sigmoid, degree: 4, gamma: scale, score: 0.7871600253004427
+C: 1000, kernel: sigmoid, degree: 4, gamma: auto, score: 0.9452877925363694
+C: 1000, kernel: sigmoid, degree: 5, gamma: scale, score: 0.7871600253004427
+C: 1000, kernel: sigmoid, degree: 5, gamma: auto, score: 0.9452877925363694
+C: 3000, kernel: poly, degree: 1, gamma: scale, score: 0.9538266919671095
+C: 3000, kernel: poly, degree: 1, gamma: auto, score: 0.9500316255534472
+C: 3000, kernel: poly, degree: 2, gamma: scale, score: 0.9576217583807717
+C: 3000, kernel: poly, degree: 2, gamma: auto, score: 0.9573055028462998
+C: 3000, kernel: poly, degree: 3, gamma: scale, score: 0.956989247311828
+C: 3000, kernel: poly, degree: 3, gamma: auto, score: 0.956989247311828
+C: 3000, kernel: poly, degree: 4, gamma: scale, score: 0.9554079696394687
+C: 3000, kernel: poly, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 3000, kernel: poly, degree: 5, gamma: scale, score: 0.9519291587602783
+C: 3000, kernel: poly, degree: 5, gamma: auto, score: 0.9519291587602783
+C: 3000, kernel: rbf, degree: 1, gamma: scale, score: 0.9538266919671095
+C: 3000, kernel: rbf, degree: 1, gamma: auto, score: 0.9557242251739405
+C: 3000, kernel: rbf, degree: 2, gamma: scale, score: 0.9538266919671095
+C: 3000, kernel: rbf, degree: 2, gamma: auto, score: 0.9557242251739405
+C: 3000, kernel: rbf, degree: 3, gamma: scale, score: 0.9538266919671095
+C: 3000, kernel: rbf, degree: 3, gamma: auto, score: 0.9557242251739405
+C: 3000, kernel: rbf, degree: 4, gamma: scale, score: 0.9538266919671095
+C: 3000, kernel: rbf, degree: 4, gamma: auto, score: 0.9557242251739405
+C: 3000, kernel: rbf, degree: 5, gamma: scale, score: 0.9538266919671095
+C: 3000, kernel: rbf, degree: 5, gamma: auto, score: 0.9557242251739405
+C: 3000, kernel: sigmoid, degree: 1, gamma: scale, score: 0.7849462365591398
+C: 3000, kernel: sigmoid, degree: 1, gamma: auto, score: 0.9449715370018975
+C: 3000, kernel: sigmoid, degree: 2, gamma: scale, score: 0.7849462365591398
+C: 3000, kernel: sigmoid, degree: 2, gamma: auto, score: 0.9449715370018975
+C: 3000, kernel: sigmoid, degree: 3, gamma: scale, score: 0.7849462365591398
+C: 3000, kernel: sigmoid, degree: 3, gamma: auto, score: 0.9449715370018975
+C: 3000, kernel: sigmoid, degree: 4, gamma: scale, score: 0.7849462365591398
+C: 3000, kernel: sigmoid, degree: 4, gamma: auto, score: 0.9449715370018975
+C: 3000, kernel: sigmoid, degree: 5, gamma: scale, score: 0.7849462365591398
+C: 3000, kernel: sigmoid, degree: 5, gamma: auto, score: 0.9449715370018975
+C: 5000, kernel: poly, degree: 1, gamma: scale, score: 0.952561669829222
+C: 5000, kernel: poly, degree: 1, gamma: auto, score: 0.9522454142947502
+C: 5000, kernel: poly, degree: 2, gamma: scale, score: 0.9576217583807717
+C: 5000, kernel: poly, degree: 2, gamma: auto, score: 0.9576217583807717
+C: 5000, kernel: poly, degree: 3, gamma: scale, score: 0.956989247311828
+C: 5000, kernel: poly, degree: 3, gamma: auto, score: 0.956989247311828
+C: 5000, kernel: poly, degree: 4, gamma: scale, score: 0.9554079696394687
+C: 5000, kernel: poly, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 5000, kernel: poly, degree: 5, gamma: scale, score: 0.9519291587602783
+C: 5000, kernel: poly, degree: 5, gamma: auto, score: 0.9519291587602783
+C: 5000, kernel: rbf, degree: 1, gamma: scale, score: 0.9538266919671095
+C: 5000, kernel: rbf, degree: 1, gamma: auto, score: 0.9554079696394687
+C: 5000, kernel: rbf, degree: 2, gamma: scale, score: 0.9538266919671095
+C: 5000, kernel: rbf, degree: 2, gamma: auto, score: 0.9554079696394687
+C: 5000, kernel: rbf, degree: 3, gamma: scale, score: 0.9538266919671095
+C: 5000, kernel: rbf, degree: 3, gamma: auto, score: 0.9554079696394687
+C: 5000, kernel: rbf, degree: 4, gamma: scale, score: 0.9538266919671095
+C: 5000, kernel: rbf, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 5000, kernel: rbf, degree: 5, gamma: scale, score: 0.9538266919671095
+C: 5000, kernel: rbf, degree: 5, gamma: auto, score: 0.9554079696394687
+C: 5000, kernel: sigmoid, degree: 1, gamma: scale, score: 0.7852624920936117
+C: 5000, kernel: sigmoid, degree: 1, gamma: auto, score: 0.9471853257432005
+C: 5000, kernel: sigmoid, degree: 2, gamma: scale, score: 0.7852624920936117
+C: 5000, kernel: sigmoid, degree: 2, gamma: auto, score: 0.9471853257432005
+C: 5000, kernel: sigmoid, degree: 3, gamma: scale, score: 0.7852624920936117
+C: 5000, kernel: sigmoid, degree: 3, gamma: auto, score: 0.9471853257432005
+C: 5000, kernel: sigmoid, degree: 4, gamma: scale, score: 0.7852624920936117
+C: 5000, kernel: sigmoid, degree: 4, gamma: auto, score: 0.9471853257432005
+C: 5000, kernel: sigmoid, degree: 5, gamma: scale, score: 0.7852624920936117
+C: 5000, kernel: sigmoid, degree: 5, gamma: auto, score: 0.9471853257432005
+C: 7000, kernel: poly, degree: 1, gamma: scale, score: 0.9541429475015812
+C: 7000, kernel: poly, degree: 1, gamma: auto, score: 0.9535104364326376
+C: 7000, kernel: poly, degree: 2, gamma: scale, score: 0.9576217583807717
+C: 7000, kernel: poly, degree: 2, gamma: auto, score: 0.9579380139152435
+C: 7000, kernel: poly, degree: 3, gamma: scale, score: 0.956989247311828
+C: 7000, kernel: poly, degree: 3, gamma: auto, score: 0.956989247311828
+C: 7000, kernel: poly, degree: 4, gamma: scale, score: 0.9554079696394687
+C: 7000, kernel: poly, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 7000, kernel: poly, degree: 5, gamma: scale, score: 0.9519291587602783
+C: 7000, kernel: poly, degree: 5, gamma: auto, score: 0.9519291587602783
+C: 7000, kernel: rbf, degree: 1, gamma: scale, score: 0.9538266919671095
+C: 7000, kernel: rbf, degree: 1, gamma: auto, score: 0.9554079696394687
+C: 7000, kernel: rbf, degree: 2, gamma: scale, score: 0.9538266919671095
+C: 7000, kernel: rbf, degree: 2, gamma: auto, score: 0.9554079696394687
+C: 7000, kernel: rbf, degree: 3, gamma: scale, score: 0.9538266919671095
+C: 7000, kernel: rbf, degree: 3, gamma: auto, score: 0.9554079696394687
+C: 7000, kernel: rbf, degree: 4, gamma: scale, score: 0.9538266919671095
+C: 7000, kernel: rbf, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 7000, kernel: rbf, degree: 5, gamma: scale, score: 0.9538266919671095
+C: 7000, kernel: rbf, degree: 5, gamma: auto, score: 0.9554079696394687
+C: 7000, kernel: sigmoid, degree: 1, gamma: scale, score: 0.7852624920936117
+C: 7000, kernel: sigmoid, degree: 1, gamma: auto, score: 0.9452877925363694
+C: 7000, kernel: sigmoid, degree: 2, gamma: scale, score: 0.7852624920936117
+C: 7000, kernel: sigmoid, degree: 2, gamma: auto, score: 0.9452877925363694
+C: 7000, kernel: sigmoid, degree: 3, gamma: scale, score: 0.7852624920936117
+C: 7000, kernel: sigmoid, degree: 3, gamma: auto, score: 0.9452877925363694
+C: 7000, kernel: sigmoid, degree: 4, gamma: scale, score: 0.7852624920936117
+C: 7000, kernel: sigmoid, degree: 4, gamma: auto, score: 0.9452877925363694
+C: 7000, kernel: sigmoid, degree: 5, gamma: scale, score: 0.7852624920936117
+C: 7000, kernel: sigmoid, degree: 5, gamma: auto, score: 0.9452877925363694
+C: 9000, kernel: poly, degree: 1, gamma: scale, score: 0.9528779253636939
+C: 9000, kernel: poly, degree: 1, gamma: auto, score: 0.9538266919671095
+C: 9000, kernel: poly, degree: 2, gamma: scale, score: 0.9576217583807717
+C: 9000, kernel: poly, degree: 2, gamma: auto, score: 0.9579380139152435
+C: 9000, kernel: poly, degree: 3, gamma: scale, score: 0.956989247311828
+C: 9000, kernel: poly, degree: 3, gamma: auto, score: 0.956989247311828
+C: 9000, kernel: poly, degree: 4, gamma: scale, score: 0.9554079696394687
+C: 9000, kernel: poly, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 9000, kernel: poly, degree: 5, gamma: scale, score: 0.9519291587602783
+C: 9000, kernel: poly, degree: 5, gamma: auto, score: 0.9519291587602783
+C: 9000, kernel: rbf, degree: 1, gamma: scale, score: 0.9538266919671095
+C: 9000, kernel: rbf, degree: 1, gamma: auto, score: 0.9554079696394687
+C: 9000, kernel: rbf, degree: 2, gamma: scale, score: 0.9538266919671095
+C: 9000, kernel: rbf, degree: 2, gamma: auto, score: 0.9554079696394687
+C: 9000, kernel: rbf, degree: 3, gamma: scale, score: 0.9538266919671095
+C: 9000, kernel: rbf, degree: 3, gamma: auto, score: 0.9554079696394687
+C: 9000, kernel: rbf, degree: 4, gamma: scale, score: 0.9538266919671095
+C: 9000, kernel: rbf, degree: 4, gamma: auto, score: 0.9554079696394687
+C: 9000, kernel: rbf, degree: 5, gamma: scale, score: 0.9538266919671095
+C: 9000, kernel: rbf, degree: 5, gamma: auto, score: 0.9554079696394687
+C: 9000, kernel: sigmoid, degree: 1, gamma: scale, score: 0.7858950031625553
+C: 9000, kernel: sigmoid, degree: 1, gamma: auto, score: 0.9452877925363694
+C: 9000, kernel: sigmoid, degree: 2, gamma: scale, score: 0.7858950031625553
+C: 9000, kernel: sigmoid, degree: 2, gamma: auto, score: 0.9452877925363694
+C: 9000, kernel: sigmoid, degree: 3, gamma: scale, score: 0.7858950031625553
+C: 9000, kernel: sigmoid, degree: 3, gamma: auto, score: 0.9452877925363694
+C: 9000, kernel: sigmoid, degree: 4, gamma: scale, score: 0.7858950031625553
+C: 9000, kernel: sigmoid, degree: 4, gamma: auto, score: 0.9452877925363694
+C: 9000, kernel: sigmoid, degree: 5, gamma: scale, score: 0.7858950031625553
+C: 9000, kernel: sigmoid, degree: 5, gamma: auto, score: 0.9452877925363694
+
+*** Best score -  C: 1000, kernel: poly, degree: 2, gamma: auto, score: 0.9582542694497154 ***
