@@ -21,7 +21,7 @@ Y_train = numpy.loadtxt('y_train.txt')
 Y_test = numpy.loadtxt('y_test.txt')
 
 # TASK 2
-classifiers = {'svm': svm.SVC(), 'knn': KNeighborsClassifier(), 'dt': DecisionTreeClassifier(), 'rf': RandomForestClassifier()}
+classifiers = {'svm': svm.SVC(), 'knn': KNeighborsClassifier(), 'dt': DecisionTreeClassifier(), 'rf': RandomForestClassifier() }
 
 predictions = {}
 for key in classifiers:
